@@ -51,13 +51,13 @@ p {
 }
 
 .article {
-  baclground-color: #7DD4FF
-  radius: 18 px
+  background-color: #7DD4FF;
+  border-radius: 18 px;
   color: #1f1f1f
 }
 
 .article img {
-  radius: 18 px
+  border-radius: 18 px
 }
 
 .home {
