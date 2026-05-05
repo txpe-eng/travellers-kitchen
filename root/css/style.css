@@ -88,7 +88,8 @@ p {
 }
 
 #productImagedcft {
-  background-image: url(../img/D.C.F.T.png);
+  background-image: url(../img/image.png);
+  width: 100%;
 }
 
 /* Hero Stlyes */
@@ -114,7 +115,7 @@ p {
   color: #ffffff;
   padding: 3rem 0;
   margin-bottom: 3rem;
-  border-radius: .2rem;
+  border-radius: 18px;
 }
 
 .heroContainer h2 {
@@ -162,3 +163,18 @@ p {
         z-index: 9999;
         border-bottom:5px solid #00A4FF;
       }
+
+.products {
+  width: 100%;
+  height: 100%;
+}
+
+.productcontainer {
+  width: 100%;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
