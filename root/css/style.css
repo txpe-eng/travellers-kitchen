@@ -1,5 +1,4 @@
 *{
-  padding: 0;
   margin: 0;
   font-family: "Special Elite", system-ui;
   box-sizing: border-box;
@@ -17,14 +16,14 @@ h1 {
 }
 
 h2 {
-  padding-bottom: 2.5 rem;
-  letter-spacing: 0.1 rem;
-  font-size: 2.25 rem;
+  padding-bottom: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.4 rem;
-  letter-spacing: 0.25 rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.25rem;
 }
 
 h4 {
@@ -32,9 +31,8 @@ h4 {
 }
 
 p {
-  padding-bottom: 0.75 rem;
   line-height: 1.5;
-  letter-spacing: 0.07 rem;
+  letter-spacing: 0.07rem;
 }
 
 .header {
@@ -45,32 +43,48 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border-bottom: 5 px solid #00A4FF;
-  width: 375 px;
+  border-bottom: 5px solid #00A4FF;
+  width: 375px;
 }
 
-.article {
-  background-color: #7DD4FF;
-  border-radius: 18 px;
-  color: #1f1f1f
-}
+
 
 .article img {
-  border-radius: 18 px
+  border-radius: 18px
+}
+
+.article h2 {
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 0rem;
 }
 
 .home {
-  border-bottom: 5 px solid #00A4FF;
+  border-bottom: 5px solid #00A4FF;
 }
 
 .hometext {
   background-color: #5685A8
 }
 
-.backgroundimg {
-  background-attachment: fixed;
+.prodbackgroundimg {
+  background-attachment: relative;
   background-size: cover;
   background-position: top;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  
+}
+
+img.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  filter: blur(35px);
 }
 
 .logo {
@@ -79,12 +93,11 @@ p {
 
 .product {
   width: 100%;
-  padding: 7 rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 #productImagedcft {
@@ -149,6 +162,13 @@ p {
   margin-bottom: 1rem;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 10000;
+}
+
 .navbar {
         display: flex;
         background: #fff;
@@ -164,9 +184,10 @@ p {
         border-bottom:5px solid #00A4FF;
       }
 
-.products {
-  width: 100%;
-  height: 100%;
+.product  h1{
+  font-size: 5rem;
+  color: white;
+  text-align: center;
 }
 
 .productcontainer {
@@ -177,4 +198,53 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.proddesc{
+  padding: 3rem 3rem 4rem 3rem;
+}
+
+
+.star {
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.article {
+  background-color: #7DD4FF;
+  border-radius: 18px;
+  color: #1f1f1f;
+  padding: 2rem;
+  margin: 3rem;
+  display: block;
+  width: 80%
+}
+
+
+.article p{
+  color: #1f1f1f;
+  margin: 0.5rem 0;
+}
+
+.article h3{
+  color: #1f1f1f;
+}
+
+.CTApack {
+  padding: 0.5rem 1rem;
+  background-color: #008000;
+  font-weight: 900;
+  transition: 0.2s ease;
+  color: #fff;
+  border-radius: 18px;
+}
+
+.CTApack :hover{
+  scale: (2);
+  transform: scale(1.1);
+  z-index: -10000;
+  background-color: #ffffff;
 }
