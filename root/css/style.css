@@ -379,3 +379,16 @@ img.background {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.productbody{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.productbody h2{
+  text-align: center;
+}
