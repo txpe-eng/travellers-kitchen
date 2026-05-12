@@ -49,6 +49,7 @@ p {
 
 .article img {
   border-radius: 18px;
+ 
 }
 
 .article h2 {
@@ -299,6 +300,18 @@ img.background {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.summaryBox {
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+
+.summaryBox img{
+  width: 100%;
+  padding:0px;
+  margin:0px;
 }
 
 /* Hide the images by default */
