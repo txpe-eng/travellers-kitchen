@@ -450,6 +450,10 @@ background-color: white;
   align-items: center;
   text-align: left;
 }
+.bookingrighttext{
+  text-align:right;
+  clear:both;
+}
 
 .productbody h2{
   text-align: center;
