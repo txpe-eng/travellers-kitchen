@@ -54,6 +54,7 @@ p {
 
 .article img {
   border-radius: 18px;
+ 
 }
 
 .article h2 {
@@ -306,6 +307,18 @@ img.background {
   margin: auto;
 }
 
+.summaryBox {
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+
+.summaryBox img{
+  width: 100%;
+  padding:0px;
+  margin:0px;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -426,4 +439,16 @@ background-color: white;
   visibility: visible;
   opacity: 1;
   transform: translateY(0rem);
+}
+.productbody{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.productbody h2{
+  text-align: center;
 }
