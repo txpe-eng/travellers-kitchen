@@ -326,7 +326,9 @@ margin: 0
   padding:0px;
   margin:0px;
 }
-
+.bookingBorder{
+  border-bottom: #00a4ff solid 5px;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
