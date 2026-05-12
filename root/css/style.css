@@ -4,6 +4,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: white;
+    --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  --color: #b3e6f4;
+  --gap: 0.5rem;
+  --radius: 5px;
 }
 
 body {
@@ -262,6 +267,7 @@ img.background {
 .checkboxprod label {
   width: 35px;
   height: 35px;
+  margin-bottom: 1rem;
 }
 
 .checkboxprod input {
@@ -288,14 +294,14 @@ img.background {
   transition: all 0.5s;
 }
 
-.check {
+.Check {
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 90%;
 }
 
-.check h3 {
+.Check h3 {
   padding: 1rem 0;
   margin: 1rem;
 }
@@ -382,6 +388,10 @@ margin: 0
   background-color: rgba(86, 133, 168, 0.555);
 }
 
+.packages{
+  margin-bottom: 2rem;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -409,6 +419,48 @@ margin: 0
   to {opacity: 1}
 }
 
+
+/* this is for the dropdown menu -OT */
+  @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900); 
+
+.btn {
+border: 0px;
+background-color: white;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 250px;
+  border-radius: var(--radius);
+  margin-top: 0.3rem;
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
 .productbody{
   margin: 2rem;
   display: flex;
@@ -438,3 +490,19 @@ margin: 0
   padding-bottom: 1rem;
 
 }
+
+
+.details input{
+  background-color: #7DD4FF;
+  color: #1f1f1f;
+  border: white;
+  font-size: large;
+  border-bottom: #1f1f1f 1px solid;
+  width: 90%;
+  margin: 0.5rem;
+}
+
+.dates{
+  display: inline;
+}
+
