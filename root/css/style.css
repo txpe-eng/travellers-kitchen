@@ -102,6 +102,38 @@ img.background {
   width: 100%;
 }
 
+/* Hot this month styles */
+
+#hot {
+  text-align: center;
+}
+
+.hotPaddding {
+  display: flex;
+}
+
+.hotArticle {
+  margin: 0 auto;
+  max-width: 75ch;
+}
+
+.hot {
+  background-color: #ffffff;
+}
+
+.hotBox {
+  width: 25%;
+}
+
+.hotBox img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hotBox p {
+  padding-bottom: 0.5rem;
+}
+
 /* Hero Stlyes */
 
 #heroImage {
@@ -369,6 +401,35 @@ img.background {
   background-color: #717171;
 }
 
+/* Footer */
+
+footer {
+  padding: 2rem 0;
+  background: white;
+  border-top: #00a4ff 5px;
+}
+
+footer h3 {
+  padding: 0 0 0.5rem 0;
+  color: #000000;
+}
+
+.footerContainer li {
+  color: #000000;
+}
+
+footer img {
+  margin: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+li {
+  padding: 0 0 0.75rem 0;
+}
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -378,4 +439,11 @@ img.background {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media (max-width: 700px) {
+  .hotBox {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
 }
