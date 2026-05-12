@@ -4,6 +4,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: white;
+    --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  --color: #b3e6f4;
+  --gap: 0.5rem;
+  --radius: 5px;
 }
 
 body {
@@ -393,4 +398,59 @@ align-content: center;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+/* this is for the dropdown menu -OT */
+  @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900); 
+
+.btn {
+border: 0px;
+background-color: white;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 250px;
+  border-radius: var(--radius);
+  margin-top: 0.3rem;
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+.productbody{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.productbody h2{
+  text-align: center;
 }
