@@ -423,6 +423,19 @@ margin: 0
 }
 
 
+
+.searchbar input[type=text] {
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    background-color: #7dd4ff;
+    border: 0px;
+     width: 400px;          
+    height: 45px;          
+    padding: 10px 15px;    
+    font-size: 18px;      
+}
+
 /* this is for the dropdown menu -OT */
   @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900); 
 
@@ -471,6 +484,10 @@ background-color: white;
   justify-content: center;
   align-items: center;
   text-align: left;
+}
+.bookingrighttext{
+  text-align:right;
+  clear:both;
 }
 
 .productbody h2{
