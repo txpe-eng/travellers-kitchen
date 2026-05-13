@@ -390,7 +390,8 @@ display: flex;
 flex-direction: column;
 align-content: center;
 padding: 0;
-margin: 0
+margin: 0;
+text-align: left;
 }
 
 .summaryBox img{
@@ -480,13 +481,14 @@ margin: 0
 
 /* Footer */
 
-footer {
+.footerContainer {
   padding: 2rem 0;
   background: white;
-  border-top: #00a4ff 5px;
+  border-top: #00a4ff 5px solid;
+  width:100%;
 }
 
-footer h3 {
+.footerContainer h3 {
   padding: 0 0 0.5rem 0;
   color: #000000;
 }
