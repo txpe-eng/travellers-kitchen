@@ -179,6 +179,20 @@ img.background {
   color: #000000;
 }
 
+/* About us */
+
+.aboutUsImg {
+  text-align: center;
+}
+
+#aboutUs {
+  padding: 2rem;
+}
+
+.aboutUsDesc {
+  padding: 1rem;
+}
+
 /* Hero Stlyes */
 
 #heroImage {
@@ -483,15 +497,14 @@ text-align: left;
 
 .footer{
   width:100%;
-  background:#e9e9e9;
+  background:#ffffff;
   border-top:5px solid #00a8ff;
   padding:18px 16px 24px;
 }
 
 .footerTop{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
+  display: block;
+  text-align: left;
 }
 
 .footerTitle{
@@ -522,6 +535,16 @@ text-align: left;
   font-size:48px;
   color:#00a8ff;
   margin-top:4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerLogo a{
+  text-decoration:none;
+  color:#111;
+  font-size:18px;
+  transition:0.2s;
 }
 
 @media (max-width:480px){
