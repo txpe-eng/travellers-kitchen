@@ -660,3 +660,14 @@ background-color: white;
   display: inline;
 }
 
+.bookingtitles{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color:#000000;
+}
+.bookingtitles h3{
+  font-size: 0.75rem;
+  color:#000000
+
+}
