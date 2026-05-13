@@ -51,3 +51,32 @@ document.documentElement.addEventListener("click", function () {
   }
 });
 
+let slideIndexmex = 1;
+showSlides(slideIndexmex);
+
+// Next/previous controls
+function plusSlidesmex(n) {
+  showSlides(slideIndexmex += n);
+}
+
+// Thumbnail image controls
+function currentSlidemex(n) {
+  showSlides(slideIndexmex = n);
+}
+
+function showSlidesmex(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlidesmex");
+  let dots = document.getElementsByClassName("dotmex");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
