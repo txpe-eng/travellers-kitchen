@@ -191,6 +191,7 @@ img.background {
   font-weight: 900;
   transition: 0.2s ease;
   color: #fff;
+  border-radius: 50px;
 }
 
 .CTA :hover {
