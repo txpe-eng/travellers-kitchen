@@ -112,6 +112,17 @@ img.background {
 
 #hot {
   text-align: center;
+  background-color: #ffffff;
+  border-top: #00a4ff 5px solid;
+  padding: 1rem 0 0 0;
+}
+
+.hotTitle {
+  color: #000000;
+}
+
+.hotTitle p {
+  color: #000000;
 }
 
 .hotPaddding {
@@ -121,14 +132,15 @@ img.background {
 .hotArticle {
   margin: 0 auto;
   max-width: 75ch;
-}
-
-.hot {
-  background-color: #ffffff;
+  color: #000000;
 }
 
 .hotBox {
   width: 25%;
+}
+
+.hotImgCard p {
+  color: #000000;
 }
 
 .hotBox img {
@@ -136,8 +148,30 @@ img.background {
   margin-bottom: 1rem;
 }
 
+.hotContainerPadding {
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
 .hotBox p {
   padding-bottom: 0.5rem;
+}
+
+#taste {
+  background-color: #C21E56;
+}
+
+#cheese {
+  background-color: #E6D300;
+}
+
+#blind {
+  background-color: #FFA500;
+}
+
+#description {
+  color: #000000;
 }
 
 /* Hero Stlyes */
