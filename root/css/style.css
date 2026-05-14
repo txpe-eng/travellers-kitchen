@@ -101,6 +101,7 @@ img.background {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #ffffff;
 }
 
 #productImagedcft {
@@ -111,6 +112,23 @@ img.background {
 
 #productImagemex {
   background-image: url(../img/Mexicuban.png);
+  width: 100%;
+}
+
+
+#productImageTaste {
+  background-image: url(../img/Taste-Trek.jpg);
+  width: 100%;
+}
+
+#productImagecow {
+  background-image: url(../img/COS.png);
+  width: 100%;
+}
+
+
+#productImageblind {
+  background-image: url(../img/blind.png);
   width: 100%;
 }
 /* Hot this month styles */
@@ -205,6 +223,7 @@ img.background {
   font-weight: 900;
   transition: 0.2s ease;
   color: #fff;
+  border-radius: 18px;
 }
 
 .CTA :hover {
@@ -215,8 +234,11 @@ img.background {
 .heroContainer {
   color: #ffffff;
   padding: 3rem 0;
-  margin-bottom: 3rem;
+
   border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heroContainer h2 {
@@ -251,11 +273,12 @@ img.background {
   margin-bottom: 1rem;
 }
 
-.container {
+.prodcontainer {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
   z-index: 10000;
+  color: #ffffff;
+  font-size: 4.2rem;
 }
 
 .productItem{
@@ -276,6 +299,18 @@ img.background {
   right: 0;
   z-index: 9999;
   border-bottom: 5px solid #00a4ff;
+}
+
+.navbar h1{
+  font-size: 1.25rem;
+}
+
+.navbar button{
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #000000;
 }
 
 .product h1 {
@@ -497,15 +532,17 @@ text-align: left;
 
 .footerContainer{
   width:100%;
-  background:#ffffff;
+  background-color: #ffffff;
   border-top:5px solid #00a8ff;
   padding:18px 16px 24px;
   color: #1f1f1f;
+  margin-top: 3rem;
 }
 
 .footerTop{
   display: block;
   text-align: left;
+
 }
 
 .footerTitle{
@@ -587,7 +624,7 @@ text-align: left;
     border-radius: 20px;
     background-color: #7dd4ff;
     border: 0px;
-     width: 400px;          
+    width: 90%;         
     height: 45px;          
     padding: 10px 15px;    
     font-size: 18px;      

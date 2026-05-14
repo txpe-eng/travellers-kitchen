@@ -47,16 +47,22 @@
 
           <div class="dropdown" id="dropdown">
             <a href="#create">
-              <i class="bx bx-happy-beaming" style="color:#000000;"></i>
+              <button onclick="about()">
+              <i class="bx bx-happy-beaming" style="color:#000000;" ></i>
               About Us
+              </button>
             </a>
             <a href="#draft">
+              <button onclick="products()">
               <i class="bx bx-dish" style="color:#000000;"></i>
               Product Page
+              </button>
             </a>
             <a href="#move">
+              <button onclick="myFunction()">
               <i class="bx bx-cart" style="color:#000000;"></i>
               Cart
+              </button>
             </a>
           </div>
         </div>
@@ -69,7 +75,7 @@
   <section id="hero">
     <div class="hero backgroundImage" id="heroImage">
       <div class="heroContainer">
-        <div class="container">
+        <div class="herotitle">
           <h2>Traveller's Kitchen</h2>
         </div>
       </div>
@@ -109,7 +115,7 @@
       </div>
     </section>
 
-    <section id="aboutUs">
+    <div id="aboutUs">
       <div class="aboutUsImg">
         <img src="img/s.png" alt="Kyle">
       </div>
@@ -129,7 +135,7 @@
         <h3 class="socialsTitle">SOCIALS</h3>
 
       </div>
-    </section>
+    </div>
 
 
 
@@ -143,7 +149,7 @@
   <div>
 
   </div>
-
+<div id="products">
   <div class="productItem">
     <div>
       <div class="searchbar">
@@ -194,16 +200,17 @@
 
                   <section class="purchasepage">
                   </section>
+</div>
 
-
+</div>
     </div>
     
     <div>
     <section id="products" class="product">
       <div class="product prodbackgroundimg" id="productImagedcft">
         <div class="productcontainer">
-          <div class="container">
-            <h1>D.C.F.T</h1>
+          <div class="prodcontainer">
+            <h1 style="font-size: 4.2rem; color: #ffffff;">D.C.F.T</h1>
           </div>
         </div>
       </div>
@@ -355,12 +362,6 @@
         </form>
       </div>
       </div>
-      <div class="summaryBox">
-        <br>
-        <div class="article">
-          
-        </div>
-      </div>
     </div>
 <p>Subtotal:</p>
 <p class="bookingrighttext">£money much</p>
@@ -376,7 +377,7 @@
           <div class="product prodbackgroundimg" id="productImagemex">
             <div class="productcontainer">
               <div class="container">
-                <h1 style="font-size: 4.2rem;">Mexicuba</h1>
+                <h1 style="font-size: 4.2rem; color: #ffffff;">Mexicuba</h1>
               </div>
             </div>
           </div>
@@ -523,10 +524,10 @@
           </div>
           <div class="productItem">
             <section id="products" class="product">
-              <div class="product prodbackgroundimg" id="productImagedcft">
+              <div class="product prodbackgroundimg" id="productImageTaste">
                 <div class="productcontainer">
                   <div class="container">
-                    <h1>D.C.F.T</h1>
+                    <h1 style="font-size: 4.2rem; color: #ffffff;">Taste Trek</h1>
                   </div>
                 </div>
               </div>
@@ -540,12 +541,9 @@
               </div>
               <div class="product proddesc">
                 <h2>About this truck</h2>
-                <p style="text-align: left;">Father and son business for over 25 years.  Dominick takes pride in every
-                  ingredient used in his deli. All of our cooking is done on site in our own kitchen.
-                  <br><br>Planning an important event with your clients, friends or family? Breakfast, lunch or dinner
-                  catered by Dominick’s Deli will will certainly impress your guests. You can select from our pre-made
-                  menus for every occasion or work with us to create your own fantastic menu.
-                  <br><br>Dominick’s Deli is also rated #1 on Long Island for our amazing chicken fingers.
+                <p style="text-align: left;">Taste Trek is all about the journey—one bite at a time. Inspired by the idea of walking through different cultures and flavours, we bring bold, street-style dishes from around the world straight to you.
+                  <br><br>Every stop is a new destination. From familiar favourites to exciting new tastes, our menu is designed to keep things fresh, fun, and full of flavour—so there’s always something worth exploring.
+                  <br><br>At Taste Trek, it’s more than just food—it’s an experience. We’re here to turn every visit into a small adventure, taking your taste buds on a walk they won’t forget.
                 </p>
               </div>
 
@@ -676,10 +674,10 @@
               </div>
               <div class="productItem">
                 <section id="products" class="product">
-                  <div class="product prodbackgroundimg" id="productImagedcft">
+                  <div class="product prodbackgroundimg" id="productImagecow">
                     <div class="productcontainer">
                       <div class="container">
-                        <h1>D.C.F.T</h1>
+                        <h1 style="font-size: 4.2rem; color: #1f1f1f;">C.O.W</h1>
                       </div>
                     </div>
                   </div>
@@ -693,12 +691,9 @@
                   </div>
                   <div class="product proddesc">
                     <h2>About this truck</h2>
-                    <p style="text-align: left;">Father and son business for over 25 years.  Dominick takes pride in
-                      every ingredient used in his deli. All of our cooking is done on site in our own kitchen.
-                      <br><br>Planning an important event with your clients, friends or family? Breakfast, lunch or
-                      dinner catered by Dominick’s Deli will will certainly impress your guests. You can select from our
-                      pre-made menus for every occasion or work with us to create your own fantastic menu.
-                      <br><br>Dominick’s Deli is also rated #1 on Long Island for our amazing chicken fingers.
+                    <p style="text-align: left;"> C.O.W. (Cheese on Wheels) is a mobile cheese experience that brings the finest artisanal cheeses directly to your event. Our mission is to share our passion for cheese and create unforgettable moments through curated cheese boards, expert pairings, and exceptional service.
+                      <br><br> Whether you’re hosting a wedding, corporate event, or private party, C.O.W. offers a unique and delicious way to elevate your gathering. Our team of cheese experts will work with you to create a customized cheese board that perfectly complements your event’s theme and your guests’ tastes.
+                      <br><br> From creamy bries to sharp cheddars, our selection of cheeses is sourced from the best producers around the world. We also offer a variety of accompaniments, including artisanal crackers, fresh fruits, and gourmet spreads, to enhance the cheese-tasting experience.
                     </p>
                   </div>
 
@@ -829,10 +824,10 @@
                   </div>
                   <div class="productItem">
                     <section id="products" class="product">
-                      <div class="product prodbackgroundimg" id="productImagedcft">
+                      <div class="product prodbackgroundimg" id="productImageblind">
                         <div class="productcontainer">
                           <div class="container">
-                            <h1>D.C.F.T</h1>
+                            <h1 style="font-size: 4.2rem; color: #ffffff;">Blind Bite</h1>
                           </div>
                         </div>
                       </div>
@@ -846,12 +841,9 @@
                       </div>
                       <div class="product proddesc">
                         <h2>About this truck</h2>
-                        <p style="text-align: left;">Father and son business for over 25 years.  Dominick takes pride in
-                          every ingredient used in his deli. All of our cooking is done on site in our own kitchen.
-                          <br><br>Planning an important event with your clients, friends or family? Breakfast, lunch or
-                          dinner catered by Dominick’s Deli will will certainly impress your guests. You can select from
-                          our pre-made menus for every occasion or work with us to create your own fantastic menu.
-                          <br><br>Dominick’s Deli is also rated #1 on Long Island for our amazing chicken fingers.
+                        <p style="text-align: left;">Blind Bite is all about the thrill of the unknown. We serve up bold, flavour-packed dishes designed to surprise your taste buds and take you out of your comfort zone with every bite.
+                          <br><br>Our menu is ever-changing, inspired by different cuisines and creative twists on street food favourites. You might not always know what to expect—but you can count on it being fresh, exciting, and seriously satisfying.
+                          <br><br>At Blind Bite , it’s more than just food—it’s an experience. Take a chance, trust the flavour, and enjoy the ride.
                         </p>
                       </div>
 
@@ -1010,7 +1002,7 @@
                   <purchasepage>
                   </purchasepage>
                   
-  <footer class="footer">
+  <footer class="footerContainer">
       <div class="footerTop">
         <h3 class="footerTitle">Traveller's Kitchen</h3>
         <div>
