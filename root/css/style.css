@@ -133,7 +133,7 @@ img.background {
 }
 /* Hot this month styles */
 
-#hot {
+.hot {
   text-align: center;
   background-color: #ffffff;
   border-top: #00a4ff 5px solid;
@@ -224,6 +224,7 @@ img.background {
   transition: 0.2s ease;
   color: #fff;
   border-radius: 18px;
+  text-decoration: none;
 }
 
 .CTA :hover {
@@ -722,3 +723,34 @@ background-color: white;
   display: inline;
 }
 
+#aboutUs{
+  display: none;
+}
+
+#dcft{
+  display: none;
+}
+
+#mex{
+  display: none;
+}
+
+#basket{
+  display: none;
+}
+
+#trek{
+  display: none;
+}
+
+#cow{
+  display: none;
+}
+
+#bite{
+  display: none;
+}
+
+#products{
+  display: none;
+}

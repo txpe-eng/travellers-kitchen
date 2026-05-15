@@ -53,6 +53,13 @@ document.documentElement.addEventListener("click", function () {
 
 function about() {
   var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("hero");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
@@ -62,6 +69,13 @@ function about() {
 
 function products() {
   var products = document.getElementById("products");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("hero");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
@@ -71,54 +85,120 @@ function products() {
 
 function cart() {
   var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("hero");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
     products.style.display = "none";
   }
+
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";}
 }
 
 function dcft() {
   var products = document.getElementById("dcft");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("products");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
     products.style.display = "none";
   }
+  
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";}
 }
 
 function mex() {
   var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("products");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
     products.style.display = "none";
   }
+  
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";}
 }
 
 function taste() {
   var products = document.getElementById("trek");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("products");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
     products.style.display = "none";
   }
+  
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";}
 }
 
 function cow() {
   var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("products");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
     products.style.display = "none";
   }
+  
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";}
 }
 
 function blind() {
   var products = document.getElementById("bite");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  } else {
+    products.style.display = "block";
+  }
+
+  var products = document.getElementById("products");
   if (products.style.display === "none") {
     products.style.display = "block";
   } else {
     products.style.display = "none";
   }
+  
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";}
 }
