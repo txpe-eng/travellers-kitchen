@@ -192,6 +192,7 @@ img.background {
   transition: 0.2s ease;
   color: #fff;
   border-radius: 50px;
+  text-decoration: none;
 }
 
 .CTA :hover {
@@ -666,6 +667,7 @@ background-color: white;
   flex-direction: row;
   justify-content: space-between;
   color:#000000;
+  letter-spacing: 0.8rem;
 }
 .bookingtitles h3{
   font-size: 0.75rem;
