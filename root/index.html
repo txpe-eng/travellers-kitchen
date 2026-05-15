@@ -28,14 +28,13 @@
     <nav class="navbar">
       <div>
         <a href="">
-          <img src="img/company-logo.png" alt="Tj's Logo" />
+          <img src="img/company-logo.png" alt="Tj's Logo" onclick="home()">
         </a>
       </div>
       <h1>Traveller's kitchen</h1>
       <div>
-        <a href="">
-          <img src="img/shoppingcart.png" alt="Shopping cart" />
-        </a>
+
+        <img src="img/shoppingcart.png" alt="Shopping cart" onclick="cart()">
       </div>
       <div>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -46,24 +45,24 @@
           </button>
 
           <div class="dropdown" id="dropdown">
-            <a href="#create">
+            <div class="menu">
               <button onclick="about()">
-              <i class="bx bx-happy-beaming" style="color:#000000;" ></i>
-              About Us
+                <i class="bx bx-happy-beaming" style="color:#000000;"></i>
+                About Us
               </button>
-            </a>
-            <a href="#draft">
+            </div>
+            <div class="menu">
               <button onclick="products()">
-              <i class="bx bx-dish" style="color:#000000;"></i>
-              Product Page
+                <i class="bx bx-dish" style="color:#000000;"></i>
+                Product Page
               </button>
-            </a>
-            <a href="#move">
-              <button onclick="myFunction()">
-              <i class="bx bx-cart" style="color:#000000;"></i>
-              Cart
+            </div>
+            <div class="menu">
+              <button onclick="cart()">
+                <i class="bx bx-cart" style="color:#000000;"></i>
+                Cart
               </button>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -79,9 +78,35 @@
           <h2>Traveller's Kitchen</h2>
         </div>
       </div>
-      <a href="#aboutUsPage" class="CTA">Learn More</a>
+      <a onclick="about()" class="CTA">Learn More</a>
     </div>
 
+    <div class="hot hotPadding">
+      <article class="hotArticle">
+        <h2 class="hotTitle">Hot this Month</h2>
+        <p id="description">Food that will make your guest's mouth water</p>
+      </article>
+      <div class="hotContainerPadding">
+        <div class="hotBox">
+          <div class="hotImgCard">
+            <img src="img/Taste-Trek.jpg" alt="Taste trek" id="taste" onclick="taste()">
+            <p>Taste Trek</p>
+          </div>
+        </div>
+        <div class="hotBox">
+          <div class="hotImgCard">
+            <img src="img/cheese-wheel.jpg" alt="Cheese on wheels" id="cheese" onclick="cow()">
+            <p>Cheese on Wheels</p>
+          </div>
+        </div>
+        <div class="hotBox">
+          <div class="hotImgCard">
+            <img src="img/Blind-Bite.jpg" alt="Blind bite" id="blind" onclick="blind()">
+            <p>Blind Bite</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
     <!-- Hot this month -->
@@ -151,373 +176,233 @@
 
 
   <homepage>
-  </div>
-
-  <div>
-  </div>
-
-  <div>
-
-  </div>
-<div id="products">
-  <div class="productItem">
-    <div>
-      <div class="searchbar">
-        
-<input  type="text" placeholder="Search.." >
-      </div>
-        
-<br>
-
-                    <div class="summaryBox">
-                      <br>
-                       <div class="bookarticle">
-                        <img src="img/D.C.F.T.png">
-                        <div><h2>D.C.F.T</h2> <h4>Italian, American</h4>
-                        </div>
-                        
-                       <h3> <i class="bx bx-star"></i>4.2  (80650)</h3>
-                       <br>
-                       <div>
-                        <a  href="aboutus.html" class="CTA"><i class="bx bx-basket"></i>Learn More</a>
-                        £too much</div>
-
-                       </div>
-                       <br>
-                       <div class="bookarticle">
-                        <img src="img/Mexicuban.png">
-                        <h2>Mexicuba</h2>
-                       </div>
-                       <br>
-                      <div class="bookarticle">
-                        <img src="img/TasteTrek.webp">
-                        <h2>Mexicuba</h2>
-                      </div>
-                      <br>
-                      <div class="bookarticle">
-                        <img src="img/COS.png">
-                        <h2>Mexicuba</h2>
-                      </div>
-                      <br>
-                      <div class="bookarticle">
-                        <img src="img/BlindBite.png">
-                        <h2>Mexicuba</h2>
-                      </div>
-                    </div>
-
-                    
-
-
-
-                  <section class="purchasepage">
-                  </section>
-</div>
-
-</div>
-    </div>
-    
-    <div>
-    <section id="products" class="product">
-      <div class="product prodbackgroundimg" id="productImagedcft">
-        <div class="productcontainer">
-          <div class="prodcontainer">
-            <h1 style="font-size: 4.2rem; color: #ffffff;">D.C.F.T</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> 4.2 (80650)</p>
-        </div>
-        <p style="text-align: center;">Hours of service: 5</p>
-      </div>
-      <div class="product proddesc">
-        <h2>About this truck</h2>
-        <p style="text-align: left;">Father and son business for over 25 years.  Dominick takes pride in every
-          ingredient used in his deli. All of our cooking is done on site in our own kitchen.
-          <br><br>Planning an important event with your clients, friends or family? Breakfast, lunch or dinner catered
-          by Dominick’s Deli will will certainly impress your guests. You can select from our pre-made menus for every
-          occasion or work with us to create your own fantastic menu.
-          <br><br>Dominick’s Deli is also rated #1 on Long Island for our amazing chicken fingers.
-        </p>
-      </div>
-
-      <h2 class="proddesc">Available Packages</h2>
-      <div class="article packages">
-        <h3>Standard Package</h3>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> Serves up to 100 guests</p>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> 3 menu options</p>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> 2 staff members</p>
-        </div>
-        <a class="CTApack">Price: £250</a>
-      </div>
-      <div class="Check"></div>
-      <h3>Select</h3>
-      <div class="checkboxprod">
-        <label>
-          <input type="checkbox" />
-          <span class="checkbox"></span>
-        </label>
-      </div>
-
-      <div class="article packages">
-        <h3>Standard Package</h3>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> Serves up to 150 guests</p>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> 5 menu options</p>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> 4 staff members</p>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="material-symbols-outlined">star</i>
-          <p> Drinks included</p>
-        </div>
-        <a class="CTApack">Price: £400</a>
-      </div>
-      <div class="Check"></div>
-      <h3>Select</h3>
-      <div class="checkboxprod">
-        <label>
-          <input type="checkbox" />
-          <span class="checkbox"></span>
-        </label>
-      </div>
-
-      <h2 style="margin-top: 2rem;">Menu Preview</h2>
-
-      <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/sandwich.webp" style="width:100%">
-          <div class="text">The Broadway Sandwich</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/rolls.webp" style="width:100%">
-          <div class="text">Peperoni Rolls</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/chick1.webp" style="width:100%">
-          <div class="text">Chicken Fingers</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-
-      <div class="article">
-
-        <form>
-
-          <h2>Book Today!</h2>
-
-          <div class="details">
-
-            <h3>Name</h3>
-            <input type="text">
-
-            <h3>Location</h3>
-            <input type="text">
-
-            <h3>Phone number</h3>
-            <input type="number">
-
-            <h3>Email</h3>
-            <input type="email">
-    <div>
-      <!-- this is th booking page -->
-      <section class="bookingBorder">
-      <div class="summaryBox">
-
-            <h3>Prticipants</h3>
-            <input type="number">
-
-            <h3>Delivery date</h3>
-            <input type="date">
-
-            <h3>start time</h3>
-            <input type="time">
-
-            <a class="CTApack">Book Now</a>
-          </div>
-        </form>
-      </div>
-      </div>
-    </div>
-  <p>Subtotal:</p>
-  <p class="bookingrighttext">£money much</p>
     </div>
 
-    <div>
-    </div>
 
-    
-    
+    <div id="products">
       <div class="productItem">
-        <section id="products" class="product">
-          <div class="product prodbackgroundimg" id="productImagemex">
-            <div class="productcontainer">
-              <div class="container">
-                <h1 style="font-size: 4.2rem; color: #ffffff;">Mexicuba</h1>
+        <div>
+          <div class="searchbar">
+
+            <input type="text" placeholder="Search..">
+          </div>
+
+          <br>
+
+          <div class="summaryBox">
+            <br>
+            <div class="bookarticle">
+              <img src="img/D.C.F.T.png" alt="Food truck">
+              <div>
+                <h2>D.C.F.T</h2>
+                <h4>Italian, American</h4>
+              </div>
+
+              <h3> <i class="bx bx-star"></i>4.2 (80650)</h3>
+              <br>
+              <div>
+                <button onclick="dcft()" class="CTA"><i class="bx bx-basket"></i>Learn More</button>
+                £too much
+              </div>
+
+            </div>
+            <br>
+            <div class="bookarticle">
+              <img src="img/Mexicuban.png" alt="Food truck">
+              <h2>Mexicuba</h2>
+
+              <h3> <i class="bx bx-star"></i>4.2 (80650)</h3>
+              <br>
+              <div>
+                <button onclick="mex()" class="CTA"><i class="bx bx-basket"></i>Learn More</button>
+                <p> £too much </p>
+              </div>
+            </div>
+            <br>
+            <div class="bookarticle">
+              <img src="img/TasteTrek.webp" alt="TasteTrek logo">
+              <h2>Mexicuba</h2>
+              <h3> <i class="bx bx-star"></i>4.2 (80650)</h3>
+              <br>
+              <div>
+                <button onclick="taste()" class="CTA"><i class="bx bx-basket"></i>Learn More</button>
+                <p> £too much </p>
+              </div>
+            </div>
+            <br>
+            <div class="bookarticle">
+              <img src="img/COS.png" alt="C.O.W logo">
+              <h2>Mexicuba</h2>
+              <h3> <i class="bx bx-star"></i>4.2 (80650)</h3>
+              <br>
+              <div>
+                <button onclick="cow()" class="CTA"><i class="bx bx-basket"></i>Learn More</button>
+                <p> £too much </p>
+              </div>
+            </div>
+            <br>
+            <div class="bookarticle">
+              <img src="img/BlindBite.png" alt="BlindBite logo">
+              <h2>Mexicuba</h2>
+
+              <h3> <i class="bx bx-star"></i>4.2 (80650)</h3>
+              <br>
+              <div>
+                <button onclick="blind()" class="CTA"><i class="bx bx-basket"></i>Learn More</button>
+                <p> £too much </p>
               </div>
             </div>
           </div>
 
-          <div class="article">
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> 3.8 (54843)</p>
-            </div>
-            <p style="text-align: center;">Hours of service: 7</p>
-          </div>
-          <div class="product proddesc">
-            <h2>About this truck</h2>
-            <p style="text-align: left;">HEY! Food lovers! We’re beyond excited to invite you on a delicious journey with our updated Food Truck Calendar! Our mouthwatering tacos, juicy burgers and our mixed flavors from Mexico and Cuba are making stops all over town, and we’ve got the schedule ready for you.
-              <br><br>Picture this: your lunch break transformed into a flavor adventure or a Friday night with friends, sharing street food that’s made with passion and creativity. Every stop brings something new – and we can’t wait for you to join us at each one!
-              <br><br>Mark your calendars, follow the aroma and get ready to savor every bite! Explore the calendar, grab your friends, and let’s support these incredible local vendors together!"
-            </p>
-          </div>
 
-          <h2 class="proddesc">Available Packages</h2>
-          <div class="article packages">
-            <h3>Standard Package</h3>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> Serves up to 50 guests</p>
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> 3 menu options</p>
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> 2 staff members</p>
-            </div>
-            <a class="CTApack">Price: £250</a>
-          </div>
-          <div class="Check"></div>
-          <h3>Select</h3>
-          <div class="checkboxprod">
-            <label>
-              <input type="checkbox" />
-              <span class="checkbox"></span>
-            </label>
-          </div>
 
-          <div class="article packages">
-            <h3>Standard Package</h3>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> Serves up to 250 guests</p>
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> 5 menu options</p>
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> 4 staff members</p>
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <i class="material-symbols-outlined">star</i>
-              <p> Drinks included</p>
-            </div>
-            <a class="CTApack">Price: £400</a>
-          </div>
-          <div class="Check"></div>
-          <h3>Select</h3>
-          <div class="checkboxprod">
-            <label>
-              <input type="checkbox" />
-              <span class="checkbox"></span>
-            </label>
-          </div>
 
-          <h2 style="margin-top: 2rem;">Menu Preview</h2>
-          
-          <div class="slideshow-container">
+          <section class="purchasepage">
+          </section>
+        </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="img/taco1.webp" style="width:100%">
-              <div class="text">Beek tacos</div>
+      </div>
+    </div>
+
+    <div>
+      <section id="dcft" class="product">
+        <div class="product prodbackgroundimg" id="productImagedcft">
+          <div class="productcontainer">
+            <div class="prodcontainer">
+              <h1 style="font-size: 4.2rem; color: #ffffff;">D.C.F.T</h1>
             </div>
-    
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="img/Curry.webp" style="width:100%">
-              <div class="text">Tasty Curry</div>
-            </div>
-    
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="img/taco2.jpg" style="width:100%">
-              <div class="text">Pulled pork Tacos</div>
-            </div>
-    
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-          <br>
-    
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="article">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4.2 (80650)</p>
+          </div>
+          <p style="text-align: center;">Hours of service: 5</p>
+        </div>
+        <div class="product proddesc">
+          <h2>About this truck</h2>
+          <p style="text-align: left;">Father and son business for over 25 years.  Dominick takes pride in every
+            ingredient used in his deli. All of our cooking is done on site in our own kitchen.
+            <br><br>Planning an important event with your clients, friends or family? Breakfast, lunch or dinner catered
+            by Dominick’s Deli will will certainly impress your guests. You can select from our pre-made menus for every
+            occasion or work with us to create your own fantastic menu.
+            <br><br>Dominick’s Deli is also rated #1 on Long Island for our amazing chicken fingers.
+          </p>
+        </div>
+
+        <h2 class="proddesc">Available Packages</h2>
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 100 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 3 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 2 staff members</p>
+          </div>
+          <a class="CTApack">Price: £250</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 150 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 5 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4 staff members</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Drinks included</p>
+          </div>
+          <a class="CTApack">Price: £400</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Menu Preview</h2>
+
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/sandwich.webp" style="width:100%" alt="The Broadway Sandwich">
+            <div class="text">The Broadway Sandwich</div>
           </div>
 
-          <div class="article">
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/rolls.webp" style="width:100%" alt="Peperoni Rolls">
+            <div class="text">Peperoni Rolls</div>
+          </div>
 
-            <form>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/chick1.webp" style="width:100%" alt="Chicken Fingers">
+            <div class="text">Chicken Fingers</div>
+          </div>
 
-              <h2>Book Today!</h2>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
 
-              <div class="details">
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
-                <h3>Name</h3>
-                <input type="text">
+        <div class="article">
 
-                <h3>Location</h3>
-                <input type="text">
+          <form>
 
-                <h3>Phone number</h3>
-                <input type="number">
+            <h2>Book Today!</h2>
 
-                <h3>Email</h3>
-                <input type="email">
+            <div class="details">
+
+              <h3>Name</h3>
+              <input type="text">
+
+              <h3>Location</h3>
+              <input type="text">
+
+              <h3>Phone number</h3>
+              <input type="number">
+
+              <h3>Email</h3>
+              <input type="email">
+              <div class="summaryBox">
 
                 <h3>Prticipants</h3>
                 <input type="number">
@@ -530,504 +415,683 @@
 
                 <a class="CTApack">Book Now</a>
               </div>
-            </form>
+          </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+
+    <div class="productItem">
+      <section id="mex" class="product">
+        <div class="product prodbackgroundimg" id="productImagemex">
+          <div class="productcontainer">
+            <div class="container">
+              <h1 style="font-size: 4.2rem; color: #ffffff;">Mexicuba</h1>
+            </div>
           </div>
+        </div>
+
+        <div class="article">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 3.8 (54843)</p>
           </div>
-          <div class="productItem">
-            <section id="products" class="product">
-              <div class="product prodbackgroundimg" id="productImageTaste">
-                <div class="productcontainer">
-                  <div class="container">
-                    <h1 style="font-size: 4.2rem; color: #ffffff;">Taste Trek</h1>
-                  </div>
-                </div>
-              </div>
-
-              <div class="article">
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> 4.2 (80650)</p>
-                </div>
-                <p style="text-align: center;">Hours of service: 5</p>
-              </div>
-              <div class="product proddesc">
-                <h2>About this truck</h2>
-                <p style="text-align: left;">Taste Trek is all about the journey—one bite at a time. Inspired by the idea of walking through different cultures and flavours, we bring bold, street-style dishes from around the world straight to you.
-                  <br><br>Every stop is a new destination. From familiar favourites to exciting new tastes, our menu is designed to keep things fresh, fun, and full of flavour—so there’s always something worth exploring.
-                  <br><br>At Taste Trek, it’s more than just food—it’s an experience. We’re here to turn every visit into a small adventure, taking your taste buds on a walk they won’t forget.
-                </p>
-              </div>
-
-              <h2 class="proddesc">Available Packages</h2>
-              <div class="article packages">
-                <h3>Standard Package</h3>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> Serves up to 100 guests</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> 3 menu options</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> 2 staff members</p>
-                </div>
-                <a class="CTApack">Price: £250</a>
-              </div>
-              <div class="Check"></div>
-              <h3>Select</h3>
-              <div class="checkboxprod">
-                <label>
-                  <input type="checkbox" />
-                  <span class="checkbox"></span>
-                </label>
-              </div>
-
-              <div class="article packages">
-                <h3>Standard Package</h3>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> Serves up to 150 guests</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> 5 menu options</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> 4 staff members</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                  <i class="material-symbols-outlined">star</i>
-                  <p> Drinks included</p>
-                </div>
-                <a class="CTApack">Price: £400</a>
-              </div>
-              <div class="Check"></div>
-              <h3>Select</h3>
-              <div class="checkboxprod">
-                <label>
-                  <input type="checkbox" />
-                  <span class="checkbox"></span>
-                </label>
-              </div>
-
-              <h2 style="margin-top: 2rem;">Menu Preview</h2>
-
-              <div class="slideshow-container">
-
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="img/yak.jpg" style="width:100%">
-                  <div class="text">Yak Soup</div>
-                </div>
-
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="img/dumplings.jpg" style="width:100%">
-                  <div class="text">Dumplings</div>
-                </div>
-
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="img/ramen.jpg" style="width:100%">
-                  <div class="text">Ramen</div>
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-              <br>
-
-              <!-- The dots/circles -->
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-
-              <div class="article">
-
-                <form>
-
-                  <h2>Book Today!</h2>
-
-                  <div class="details">
-
-                    <h3>Name</h3>
-                    <input type="text">
-
-                    <h3>Location</h3>
-                    <input type="text">
-
-                    <h3>Phone number</h3>
-                    <input type="number">
-
-                    <h3>Email</h3>
-                    <input type="email">
-
-                    <h3>Prticipants</h3>
-                    <input type="number">
-
-                    <h3>Delivery date</h3>
-                    <input type="date">
-
-                    <h3>start time</h3>
-                    <input type="time">
-
-                    <a class="CTApack">Book Now</a>
-                  </div>
-                </form>
-              </div>
-              </div>
-              <div class="productItem">
-                <section id="products" class="product">
-                  <div class="product prodbackgroundimg" id="productImagecow">
-                    <div class="productcontainer">
-                      <div class="container">
-                        <h1 style="font-size: 4.2rem; color: #1f1f1f;">C.O.W</h1>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="article">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> 4.2 (80650)</p>
-                    </div>
-                    <p style="text-align: center;">Hours of service: 5</p>
-                  </div>
-                  <div class="product proddesc">
-                    <h2>About this truck</h2>
-                    <p style="text-align: left;"> C.O.W. (Cheese on Wheels) is a mobile cheese experience that brings the finest artisanal cheeses directly to your event. Our mission is to share our passion for cheese and create unforgettable moments through curated cheese boards, expert pairings, and exceptional service.
-                      <br><br> Whether you’re hosting a wedding, corporate event, or private party, C.O.W. offers a unique and delicious way to elevate your gathering. Our team of cheese experts will work with you to create a customized cheese board that perfectly complements your event’s theme and your guests’ tastes.
-                      <br><br> From creamy bries to sharp cheddars, our selection of cheeses is sourced from the best producers around the world. We also offer a variety of accompaniments, including artisanal crackers, fresh fruits, and gourmet spreads, to enhance the cheese-tasting experience.
-                    </p>
-                  </div>
-
-                  <h2 class="proddesc">Available Packages</h2>
-                  <div class="article packages">
-                    <h3>Standard Package</h3>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> Serves up to 100 guests</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> 3 menu options</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> 2 staff members</p>
-                    </div>
-                    <a class="CTApack">Price: £250</a>
-                  </div>
-                  <div class="Check"></div>
-                  <h3>Select</h3>
-                  <div class="checkboxprod">
-                    <label>
-                      <input type="checkbox" />
-                      <span class="checkbox"></span>
-                    </label>
-                  </div>
-
-                  <div class="article packages">
-                    <h3>Standard Package</h3>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> Serves up to 150 guests</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> 5 menu options</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> 4 staff members</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="material-symbols-outlined">star</i>
-                      <p> Drinks included</p>
-                    </div>
-                    <a class="CTApack">Price: £400</a>
-                  </div>
-                  <div class="Check"></div>
-                  <h3>Select</h3>
-                  <div class="checkboxprod">
-                    <label>
-                      <input type="checkbox" />
-                      <span class="checkbox"></span>
-                    </label>
-                  </div>
-
-                  <h2 style="margin-top: 2rem;">Menu Preview</h2>
-
-                  <div class="slideshow-container">
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="img/cheese1.webp" style="width:100%">
-                      <div class="text">Small Cheeseboard</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="img/cheese2.jpg" style="width:100%">
-                      <div class="text">Medium Cheeseboard</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="img/escargot.jpg" style="width:100%">
-                      <div class="text">Escargot</div>
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
-
-                  <div class="article">
-
-                    <form>
-
-                      <h2>Book Today!</h2>
-
-                      <div class="details">
-
-                        <h3>Name</h3>
-                        <input type="text">
-
-                        <h3>Location</h3>
-                        <input type="text">
-
-                        <h3>Phone number</h3>
-                        <input type="number">
-
-                        <h3>Email</h3>
-                        <input type="email">
-
-                        <h3>Prticipants</h3>
-                        <input type="number">
-
-                        <h3>Delivery date</h3>
-                        <input type="date">
-
-                        <h3>start time</h3>
-                        <input type="time">
-
-                        <a class="CTApack">Book Now</a>
-                      </div>
-                    </form>
-                  </div>
-                  </div>
-                  <div class="productItem">
-                    <section id="products" class="product">
-                      <div class="product prodbackgroundimg" id="productImageblind">
-                        <div class="productcontainer">
-                          <div class="container">
-                            <h1 style="font-size: 4.2rem; color: #ffffff;">Blind Bite</h1>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="article">
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> 4.2 (80650)</p>
-                        </div>
-                        <p style="text-align: center;">Hours of service: 5</p>
-                      </div>
-                      <div class="product proddesc">
-                        <h2>About this truck</h2>
-                        <p style="text-align: left;">Blind Bite is all about the thrill of the unknown. We serve up bold, flavour-packed dishes designed to surprise your taste buds and take you out of your comfort zone with every bite.
-                          <br><br>Our menu is ever-changing, inspired by different cuisines and creative twists on street food favourites. You might not always know what to expect—but you can count on it being fresh, exciting, and seriously satisfying.
-                          <br><br>At Blind Bite , it’s more than just food—it’s an experience. Take a chance, trust the flavour, and enjoy the ride.
-                        </p>
-                      </div>
-
-                      <h2 class="proddesc">Available Packages</h2>
-                      <div class="article packages">
-                        <h3>Standard Package</h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> Serves up to 100 guests</p>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> 3 menu options</p>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> 2 staff members</p>
-                        </div>
-                        <a class="CTApack">Price: £250</a>
-                      </div>
-                      <div class="Check"></div>
-                      <h3>Select</h3>
-                      <div class="checkboxprod">
-                        <label>
-                          <input type="checkbox" />
-                          <span class="checkbox"></span>
-                        </label>
-                      </div>
-
-                      <div class="article packages">
-                        <h3>Standard Package</h3>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> Serves up to 150 guests</p>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> 5 menu options</p>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> 4 staff members</p>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem;">
-                          <i class="material-symbols-outlined">star</i>
-                          <p> Drinks included</p>
-                        </div>
-                        <a class="CTApack">Price: £400</a>
-                      </div>
-                      <div class="Check"></div>
-                      <h3>Select</h3>
-                      <div class="checkboxprod">
-                        <label>
-                          <input type="checkbox" />
-                          <span class="checkbox"></span>
-                        </label>
-                      </div>
-
-                      <h2 style="margin-top: 2rem;">Menu Preview</h2>
-
-                      <div class="slideshow-container">
-
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 3</div>
-                          <img src="img/luck1.webp" style="width:100%">
-                          <div class="text">Lucky Box</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <div class="numbertext">2 / 3</div>
-                          <img src="img/luck2.webp" style="width:100%">
-                          <div class="text">Lucky Box</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <div class="numbertext">3 / 3</div>
-                          <img src="img/luck3.png" style="width:100%">
-                          <div class="text">Lucky Box</div>
-                        </div>
-
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                      </div>
-                      <br>
-
-                      <!-- The dots/circles -->
-                      <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                      </div>
-
-                      <div class="article">
-
-                        <form>
-
-                          <h2>Book Today!</h2>
-
-                          <div class="details">
-
-                            <h3>Name</h3>
-                            <input type="text">
-
-                            <h3>Location</h3>
-                            <input type="text">
-
-                            <h3>Phone number</h3>
-                            <input type="number">
-
-                            <h3>Email</h3>
-                            <input type="email">
-
-                            <h3>Prticipants</h3>
-                            <input type="number">
-
-                            <h3>Delivery date</h3>
-                            <input type="date">
-
-                            <h3>start time</h3>
-                            <input type="time">
-
-                            <a class="CTApack">Book Now</a>
-                          </div>
-                        </form>
-                      </div>
-                      </div>
-
-                    </section>
-
-                  </productItem>
-
-                  <section class="bookingpage">
-                    <!-- this is th booking page -->
-                    <div class="summaryBox">
-                      <h2 class="summary">Order Summary</h2>
-                      <br>
-                      <div class="bookarticle">
-                        <img src="img/D.C.F.T.png">
-                        <div class="bookingtitles">
-                        <h2>D.C.F.T</h2>
-                        <h3>[REMOVE]</h3>
-                      </div>
-                      </div>
-                      <br>
-                      <div class="bookarticle">
-                        <img src="img/Mexicuban.png">
-                        <div class="bookingtitles">
-                        <h2>Mexicuba</h2>
-                        <h3>[REMOVE]</h3>
-                      </div>
-                      </div>
-                    </div>
-
-                  <purchasepage>
-                  </purchasepage>
-                  
-  <footer class="footerContainer">
+          <p style="text-align: center;">Hours of service: 7</p>
+        </div>
+        <div class="product proddesc">
+          <h2>About this truck</h2>
+          <p style="text-align: left;">HEY! Food lovers! We’re beyond excited to invite you on a delicious journey with
+            our updated Food Truck Calendar! Our mouthwatering tacos, juicy burgers and our mixed flavors from Mexico
+            and Cuba are making stops all over town, and we’ve got the schedule ready for you.
+            <br><br>Picture this: your lunch break transformed into a flavor adventure or a Friday night with friends,
+            sharing street food that’s made with passion and creativity. Every stop brings something new – and we can’t
+            wait for you to join us at each one!
+            <br><br>Mark your calendars, follow the aroma and get ready to savor every bite! Explore the calendar, grab
+            your friends, and let’s support these incredible local vendors together!"
+          </p>
+        </div>
+
+        <h2 class="proddesc">Available Packages</h2>
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 50 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 3 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 2 staff members</p>
+          </div>
+          <a class="CTApack">Price: £250</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 250 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 5 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4 staff members</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Drinks included</p>
+          </div>
+          <a class="CTApack">Price: £400</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Menu Preview</h2>
+
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/taco1.webp" style="width:100%" alt="Beef tacos">
+            <div class="text">Beef tacos</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/Curry.webp" style="width:100%" alt="Tasty Curry">
+            <div class="text">Tasty Curry</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/taco2.jpg" style="width:100%" alt="Pulled pork Tacos">
+            <div class="text">Pulled pork Tacos</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="article">
+
+          <form>
+
+            <h2>Book Today!</h2>
+
+            <div class="details">
+
+              <h3>Name</h3>
+              <input type="text">
+
+              <h3>Location</h3>
+              <input type="text">
+
+              <h3>Phone number</h3>
+              <input type="number">
+
+              <h3>Email</h3>
+              <input type="email">
+
+              <h3>Prticipants</h3>
+              <input type="number">
+
+              <h3>Delivery date</h3>
+              <input type="date">
+
+              <h3>start time</h3>
+              <input type="time">
+
+              <a class="CTApack">Book Now</a>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="productItem">
+      <section id="trek" class="product">
+        <div class="product prodbackgroundimg" id="productImageTaste">
+          <div class="productcontainer">
+            <div class="container">
+              <h1 style="font-size: 4.2rem; color: #ffffff;">Taste Trek</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="article">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4.2 (80650)</p>
+          </div>
+          <p style="text-align: center;">Hours of service: 5</p>
+        </div>
+        <div class="product proddesc">
+          <h2>About this truck</h2>
+          <p style="text-align: left;">Taste Trek is all about the journey—one bite at a time. Inspired by the idea of
+            walking through different cultures and flavours, we bring bold, street-style dishes from around the world
+            straight to you.
+            <br><br>Every stop is a new destination. From familiar favourites to exciting new tastes, our menu is
+            designed to keep things fresh, fun, and full of flavour—so there’s always something worth exploring.
+            <br><br>At Taste Trek, it’s more than just food—it’s an experience. We’re here to turn every visit into a
+            small adventure, taking your taste buds on a walk they won’t forget.
+          </p>
+        </div>
+
+        <h2 class="proddesc">Available Packages</h2>
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 100 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 3 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 2 staff members</p>
+          </div>
+          <a class="CTApack">Price: £250</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 150 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 5 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4 staff members</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Drinks included</p>
+          </div>
+          <a class="CTApack">Price: £400</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Menu Preview</h2>
+
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/yak.jpg" style="width:100%" alt="Yak Soup">
+            <div class="text">Yak Soup</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/dumplings.jpg" style="width:100%" alt="Dumplings">
+            <div class="text">Dumplings</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/ramen.jpg" style="width:100%" alt="Ramen">
+            <div class="text">Ramen</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="article">
+
+          <form>
+
+            <h2>Book Today!</h2>
+
+            <div class="details">
+
+              <h3>Name</h3>
+              <input type="text">
+
+              <h3>Location</h3>
+              <input type="text">
+
+              <h3>Phone number</h3>
+              <input type="number">
+
+              <h3>Email</h3>
+              <input type="email">
+
+              <h3>Prticipants</h3>
+              <input type="number">
+
+              <h3>Delivery date</h3>
+              <input type="date">
+
+              <h3>start time</h3>
+              <input type="time">
+
+              <a class="CTApack">Book Now</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="productItem">
+      <section id="cow" class="product">
+        <div class="product prodbackgroundimg" id="productImagecow">
+          <div class="productcontainer">
+            <div class="container">
+              <h1 style="font-size: 4.2rem; color: #1f1f1f;">C.O.W</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="article">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4.2 (80650)</p>
+          </div>
+          <p style="text-align: center;">Hours of service: 5</p>
+        </div>
+        <div class="product proddesc">
+          <h2>About this truck</h2>
+          <p style="text-align: left;"> C.O.W. (Cheese on Wheels) is a mobile cheese experience that brings the finest
+            artisanal cheeses directly to your event. Our mission is to share our passion for cheese and create
+            unforgettable moments through curated cheese boards, expert pairings, and exceptional service.
+            <br><br> Whether you’re hosting a wedding, corporate event, or private party, C.O.W. offers a unique and
+            delicious way to elevate your gathering. Our team of cheese experts will work with you to create a
+            customized cheese board that perfectly complements your event’s theme and your guests’ tastes.
+            <br><br> From creamy bries to sharp cheddars, our selection of cheeses is sourced from the best producers
+            around the world. We also offer a variety of accompaniments, including artisanal crackers, fresh fruits, and
+            gourmet spreads, to enhance the cheese-tasting experience.
+          </p>
+        </div>
+
+        <h2 class="proddesc">Available Packages</h2>
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 100 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 3 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 2 staff members</p>
+          </div>
+          <a class="CTApack">Price: £250</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 150 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 5 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4 staff members</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Drinks included</p>
+          </div>
+          <a class="CTApack">Price: £400</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Menu Preview</h2>
+
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/cheese1.webp" style="width:100%" alt="Small Cheeseboard">
+            <div class="text">Small Cheeseboard</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/cheese2.jpg" style="width:100%" alt="Medium Cheeseboard">
+            <div class="text">Medium Cheeseboard</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/escargot.jpg" style="width:100%" alt="Escargot">
+            <div class="text">Escargot</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="article">
+
+          <form>
+
+            <h2>Book Today!</h2>
+
+            <div class="details">
+
+              <h3>Name</h3>
+              <input type="text">
+
+              <h3>Location</h3>
+              <input type="text">
+
+              <h3>Phone number</h3>
+              <input type="number">
+
+              <h3>Email</h3>
+              <input type="email">
+
+              <h3>Prticipants</h3>
+              <input type="number">
+
+              <h3>Delivery date</h3>
+              <input type="date">
+
+              <h3>start time</h3>
+              <input type="time">
+
+              <a class="CTApack">Book Now</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="productItem">
+      <section id="bite" class="product">
+        <div class="product prodbackgroundimg" id="productImageblind">
+          <div class="productcontainer">
+            <div class="container">
+              <h1 style="font-size: 4.2rem; color: #ffffff;">Blind Bite</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="article">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4.2 (80650)</p>
+          </div>
+          <p style="text-align: center;">Hours of service: 5</p>
+        </div>
+        <div class="product proddesc">
+          <h2>About this truck</h2>
+          <p style="text-align: left;">Blind Bite is all about the thrill of the unknown. We serve up bold,
+            flavour-packed dishes designed to surprise your taste buds and take you out of your comfort zone with every
+            bite.
+            <br><br>Our menu is ever-changing, inspired by different cuisines and creative twists on street food
+            favourites. You might not always know what to expect—but you can count on it being fresh, exciting, and
+            seriously satisfying.
+            <br><br>At Blind Bite , it’s more than just food—it’s an experience. Take a chance, trust the flavour, and
+            enjoy the ride.
+          </p>
+        </div>
+
+        <h2 class="proddesc">Available Packages</h2>
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 100 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 3 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 2 staff members</p>
+          </div>
+          <a class="CTApack">Price: £250</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <div class="article packages">
+          <h3>Standard Package</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Serves up to 150 guests</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 5 menu options</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> 4 staff members</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="material-symbols-outlined">star</i>
+            <p> Drinks included</p>
+          </div>
+          <a class="CTApack">Price: £400</a>
+        </div>
+        <div class="Check"></div>
+        <h3>Select</h3>
+        <div class="checkboxprod">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Menu Preview</h2>
+
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/luck1.webp" style="width:100%" alt="Lucky Box">
+            <div class="text">Lucky Box</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/luck2.webp" style="width:100%" alt="Lucky Box">
+            <div class="text">Lucky Box</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/luck3.png" style="width:100%" alt="Lucky Box">
+            <div class="text">Lucky Box</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="article">
+
+          <form>
+
+            <h2>Book Today!</h2>
+
+            <div class="details">
+
+              <h3>Name</h3>
+              <input type="text">
+
+              <h3>Location</h3>
+              <input type="text">
+
+              <h3>Phone number</h3>
+              <input type="number">
+
+              <h3>Email</h3>
+              <input type="email">
+
+              <h3>Prticipants</h3>
+              <input type="number">
+
+              <h3>Delivery date</h3>
+              <input type="date">
+
+              <h3>start time</h3>
+              <input type="time">
+
+              <a class="CTApack">Book Now</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    </section>
+
+    </productItem>
+
+    <section class="bookingpage" id="basket">
+      <!-- this is th booking page -->
+      <div class="summaryBox">
+        <h2 class="summary">Order Summary</h2>
+        <br>
+        <div class="bookarticle">
+          <img src="img/D.C.F.T.png" alt="Food Truck">
+          <div class="bookingtitles">
+            <h2>D.C.F.T</h2>
+            <h3>[REMOVE]</h3>
+          </div>
+        </div>
+        <br>
+        <div class="bookarticle">
+          <img src="img/Mexicuban.png" alt="Food Truck">
+          <div class="bookingtitles">
+            <h2>Mexicuba</h2>
+            <h3>[REMOVE]</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <purchasepage>
+    </purchasepage>
+
+    <footer class="footerContainer">
       <div class="footerTop">
         <h3 class="footerTitle">Traveller's Kitchen</h3>
         <div>
-        <nav class="navLinks">
-          <a href="index.html">Home</a>
-          <a href="#aboutUs">About us</a>
-          <a href="Product-Page.html">Products</a>
-          
-        </nav>
-      </div>
+          <nav class="navLinks">
+            <a onclick="home()">Home</a>
+            <a onclick="about()">About us</a>
+            <a onclick="products()">Products</a>
+
+          </nav>
+        </div>
       </div>
       <div class="footerLogo">
-        <a href="basket">Basket</a>
-        <img src="img/company-logo.png" alt="company logo">
+        <a onclick="cart()">Basket</a>
+        <img src="img/company-logo.png" alt="company logo" onclick="home()">
       </div>
     </footer>
 </body>
