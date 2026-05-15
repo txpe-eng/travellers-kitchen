@@ -51,3 +51,20 @@ document.documentElement.addEventListener("click", function () {
   }
 });
 
+function about() {
+  var about = document.getElementById("aboutUs");
+  if (about.style.display === "none") {
+    about.style.display = "block";
+  } else {
+    about.style.display = "none";
+  }
+}
+
+function products() {
+  var products = document.getElementById("products");
+  if (products.style.display === "none") {
+    products.style.display = "block";
+  } else {
+    products.style.display = "none";
+  }
+}
