@@ -115,6 +115,36 @@ function about() {
   if (products.style.display === "block") {
     products.style.display = "none";
   }
+
+  var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("dctf");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("products");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("hero");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
 }
 
 function products() {
@@ -128,7 +158,35 @@ function products() {
   var products = document.getElementById("hero");
   if (products.style.display === "none") {
     products.style.display = "block";
-  } else {
+  } 
+
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("dctf");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("hero");
+  if (products.style.display === "block") {
     products.style.display = "none";
   }
 }
@@ -140,17 +198,46 @@ function cart() {
   } else {
     products.style.display = "block";
   }
-
-  var products = document.getElementById("hero");
-  if (products.style.display === "none") {
-    products.style.display = "block";
-  } else {
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
     products.style.display = "none";
   }
 
-  var products = document.getElementById("basket");
+  var products = document.getElementById("cow");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("dctf");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("products");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("hero");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("trek");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("bite");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
 }
 
 function dcft() {
@@ -161,20 +248,46 @@ function dcft() {
     products.style.display = "block";
   }
 
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+   var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
   var products = document.getElementById("products");
-  if (products.style.display === "none") {
-    products.style.display = "block";
-  } else {
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
     products.style.display = "none";
   }
 
   var products = document.getElementById("hero");
   if (products.style.display === "block") {
-    products.style.display = "none";}
-  
-  var products = document.getElementById("basket");
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("trek");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("bite");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
 }
 
 function mex() {
@@ -185,20 +298,46 @@ function mex() {
     products.style.display = "block";
   }
 
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("dctf");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
   var products = document.getElementById("products");
-  if (products.style.display === "none") {
-    products.style.display = "block";
-  } else {
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
     products.style.display = "none";
   }
 
   var products = document.getElementById("hero");
   if (products.style.display === "block") {
-    products.style.display = "none";}
-  
-  var products = document.getElementById("basket");
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("trek");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("bite");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
 }
 
 function taste() {
@@ -209,20 +348,46 @@ function taste() {
     products.style.display = "block";
   }
 
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("dctf");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
   var products = document.getElementById("products");
-  if (products.style.display === "none") {
-    products.style.display = "block";
-  } else {
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("basket");
+  if (products.style.display === "block") {
     products.style.display = "none";
   }
 
   var products = document.getElementById("hero");
   if (products.style.display === "block") {
-    products.style.display = "none";}
-  
-  var products = document.getElementById("basket");
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("bite");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
 }
 
 function cow() {
@@ -233,20 +398,46 @@ function cow() {
     products.style.display = "block";
   }
 
-  var products = document.getElementById("products");
-  if (products.style.display === "none") {
-    products.style.display = "block";
-  } else {
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
     products.style.display = "none";
   }
-  
-  var products = document.getElementById("hero");
+
+  var products = document.getElementById("dctf");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("products");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
 
   var products = document.getElementById("basket");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("hero");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("trek");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("bite");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
 }
 
 function blind() {
@@ -257,18 +448,46 @@ function blind() {
     products.style.display = "block";
   }
 
-  var products = document.getElementById("products");
-  if (products.style.display === "none") {
-    products.style.display = "block";
-  } else {
+  var products = document.getElementById("aboutUs");
+  if (products.style.display === "block") {
     products.style.display = "none";
-  
   }
-    var products = document.getElementById("hero");
-    if (products.style.display === "block") {
-      products.style.display = "none";}
-  
+
+  var products = document.getElementById("cow");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("dctf");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("mex");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("products");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
   var products = document.getElementById("basket");
   if (products.style.display === "block") {
-    products.style.display = "none";}
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("hero");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+  var products = document.getElementById("trek");
+  if (products.style.display === "block") {
+    products.style.display = "none";
+  }
+
+
+
 }
