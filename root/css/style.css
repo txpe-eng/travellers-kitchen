@@ -306,7 +306,7 @@ img.background {
 .productItem {
   text-align: center;
   max-width: 100%;
-  padding-bottom: 2rem;
+
 }
 
 .navbar {
@@ -565,7 +565,7 @@ img.background {
   border-top: 5px solid #00a8ff;
   padding: 18px 16px 24px;
   color: #1f1f1f;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .footerTop {
@@ -662,6 +662,7 @@ img.background {
   height: 45px;
   padding: 10px 15px;
   font-size: 18px;
+  margin-top: 2rem ;
 }
 
 /* this is for the dropdown menu -OT */
