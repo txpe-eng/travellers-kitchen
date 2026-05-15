@@ -15,16 +15,16 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 // this is for the dropdown
@@ -88,7 +88,7 @@ function home() {
   if (products.style.display === "block") {
     products.style.display = "none";
   }
-  
+
 
   var products = document.getElementById("trek");
   if (products.style.display === "block") {
@@ -158,7 +158,7 @@ function products() {
   var products = document.getElementById("hero");
   if (products.style.display === "none") {
     products.style.display = "block";
-  } 
+  }
 
   var products = document.getElementById("aboutUs");
   if (products.style.display === "block") {
@@ -258,7 +258,7 @@ function dcft() {
     products.style.display = "none";
   }
 
-   var products = document.getElementById("mex");
+  var products = document.getElementById("mex");
   if (products.style.display === "block") {
     products.style.display = "none";
   }

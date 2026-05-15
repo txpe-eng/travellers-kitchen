@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: white;
-    --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   --color: #b3e6f4;
   --gap: 0.5rem;
@@ -54,7 +54,7 @@ p {
 
 .article img {
   border-radius: 18px;
- 
+
 }
 
 .article h2 {
@@ -131,6 +131,7 @@ img.background {
   background-image: url(../img/blind.png);
   width: 100%;
 }
+
 /* Hot this month styles */
 
 .hot {
@@ -282,11 +283,11 @@ img.background {
   font-size: 4.2rem;
 }
 
-.productItem{
+.productItem {
   text-align: center;
   max-width: 100%;
   padding-bottom: 2rem;
-  }
+}
 
 .navbar {
   display: flex;
@@ -303,11 +304,11 @@ img.background {
   border-bottom: 5px solid #00a4ff;
 }
 
-.navbar h1{
+.navbar h1 {
   font-size: 1.25rem;
 }
 
-.navbar button{
+.navbar button {
   background: none;
   border: none;
   font-size: 1rem;
@@ -398,7 +399,7 @@ img.background {
   display: none;
 }
 
-.checkboxprod input:checked ~ .checkbox {
+.checkboxprod input:checked~.checkbox {
   transform: rotate(45deg);
   width: 14px;
   margin-left: 12px;
@@ -437,30 +438,33 @@ img.background {
 }
 
 .summaryBox {
-display: flex;
-flex-direction: column;
-align-content: center;
-padding: 0;
-margin: 0;
-text-align: left;
-padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 0;
 }
 
-.summaryBox img{
+.summaryBox img {
   width: 100%;
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
 }
-.bookingBorder{
+
+.bookingBorder {
   border-bottom: #00a4ff solid 5px;
 }
+
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -485,11 +489,12 @@ padding-bottom: 0;
 .prev {
   left: 0;
   background-color: rgba(86, 133, 168, 0.4);
-  border-radius: 0px 3px 3px  0px;
+  border-radius: 0px 3px 3px 0px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(86, 133, 168, 0.8);
 }
 
@@ -527,78 +532,79 @@ padding-bottom: 0;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
 /* Footer */
 
-.footerContainer{
-  width:100%;
+.footerContainer {
+  width: 100%;
   background-color: #ffffff;
-  border-top:5px solid #00a8ff;
-  padding:18px 16px 24px;
+  border-top: 5px solid #00a8ff;
+  padding: 18px 16px 24px;
   color: #1f1f1f;
   margin-top: 3rem;
 }
 
-.footerTop{
+.footerTop {
   display: block;
   text-align: left;
 
 }
 
-.footerTitle{
-  font-size:28px;
-  font-weight:500;
-  color:#111;
-  margin-bottom:14px;
+.footerTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 14px;
 }
 
-.navLinks{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.navLinks a{
-  text-decoration:none;
-  color:#111;
-  font-size:18px;
-  transition:0.2s;
+.navLinks a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  transition: 0.2s;
 }
 
-.navLinks a:hover{
-  color:#00a8ff;
+.navLinks a:hover {
+  color: #00a8ff;
 }
 
-.footerLogo{
-  font-size:48px;
-  color:#00a8ff;
-  margin-top:4px;
+.footerLogo {
+  font-size: 48px;
+  color: #00a8ff;
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.footerLogo a{
-  text-decoration:none;
-  color:#111;
-  font-size:18px;
-  transition:0.2s;
+.footerLogo a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  transition: 0.2s;
 }
 
-@media (max-width:480px){
-  .footerTitle{
-    font-size:20px;
+@media (max-width:480px) {
+  .footerTitle {
+    font-size: 20px;
   }
 
-  .navLinks a{
-    font-size:16px;
+  .navLinks a {
+    font-size: 16px;
   }
 
-  .footerLogo{
-    font-size:42px;
+  .footerLogo {
+    font-size: 42px;
   }
 }
 
@@ -609,8 +615,13 @@ padding-bottom: 0;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @media (max-width: 700px) {
@@ -622,23 +633,23 @@ padding-bottom: 0;
 
 
 .searchbar input[type=text] {
-    margin: 0 auto;
-    display: block;
-    border-radius: 20px;
-    background-color: #7dd4ff;
-    border: 0px;
-    width: 90%;         
-    height: 45px;          
-    padding: 10px 15px;    
-    font-size: 18px;      
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  background-color: #7dd4ff;
+  border: 0px;
+  width: 90%;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 18px;
 }
 
 /* this is for the dropdown menu -OT */
-  @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900); 
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 .btn {
-border: 0px;
-background-color: white;
+  border: 0px;
+  background-color: white;
 }
 
 .dropdown {
@@ -655,7 +666,7 @@ background-color: white;
   transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
 }
 
-.menu{
+.menu {
   display: flex;
   align-items: center;
   column-gap: var(--gap);
@@ -674,7 +685,8 @@ background-color: white;
   opacity: 1;
   transform: translateY(0rem);
 }
-.productbody{
+
+.productbody {
   margin: 2rem;
   display: flex;
   flex-direction: column;
@@ -682,12 +694,13 @@ background-color: white;
   align-items: center;
   text-align: left;
 }
-.bookingrighttext{
-  text-align:right;
-  clear:both;
+
+.bookingrighttext {
+  text-align: right;
+  clear: both;
 }
 
-.productbody h2{
+.productbody h2 {
   text-align: center;
 }
 
@@ -702,14 +715,14 @@ background-color: white;
   width: 90%;
 }
 
-.bookarticle img{
+.bookarticle img {
 
   padding-bottom: 1rem;
 
 }
 
 
-.details input{
+.details input {
   background-color: #7DD4FF;
   color: #1f1f1f;
   border: white;
@@ -719,38 +732,38 @@ background-color: white;
   margin: 0.5rem;
 }
 
-.dates{
+.dates {
   display: inline;
 }
 
-#aboutUs{
+#aboutUs {
   display: none;
 }
 
-#dcft{
+#dcft {
   display: none;
 }
 
-#mex{
+#mex {
   display: none;
 }
 
-#basket{
+#basket {
   display: none;
 }
 
-#trek{
+#trek {
   display: none;
 }
 
-#cow{
+#cow {
   display: none;
 }
 
-#bite{
+#bite {
   display: none;
 }
 
-#products{
+#products {
   display: none;
 }
